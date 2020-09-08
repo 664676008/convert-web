@@ -66,8 +66,7 @@
                                     drag>
                                 <i class="el-icon-upload"></i>
 
-                                <div class="el-upload__text">将文件拖到此处，或<em>点击上传</em></div>
-                                <div class="el-upload__tip" slot="tip">请选择音乐文件</div>
+                                <div class="el-upload__text">将文件拖到此处，或<em>选择文件</em></div>
                             </el-upload>
                         </div>
                     </div>
@@ -75,7 +74,12 @@
                 </el-form>
             </el-card>
         </el-main>
-        <el-footer></el-footer>
+        <el-footer height="auto" style="font-size: 10px;">
+            <div>
+                <span style="margin-right: 10px;color: #535353">欢迎提出您的意见和建议 : zyt6646@126.com</span>
+                <a href="https://beian.miit.gov.cn" target="_blank" style="color: #535353;"><img src="//img.alicdn.com/tps/TB1yEqRPXXXXXXPXpXXXXXXXXXX-20-20.png" style="position:relative;top:5px;vertical-align:baseline;">粤ICP备19108563号</a>
+            </div>
+        </el-footer>
     </el-container>
 
 </template>
@@ -270,8 +274,54 @@
 }
 </style>
 <style>
+    .el-radio__input.is-checked+.el-radio__label{
+        color: #44c299 !important;
+    }
+    .el-radio__input.is-checked .el-radio__inner{
+        background: #44c299 !important;
+        border-color: #44c299 !important;
+    }
+    .el-tooltip.el-slider__button{
+        border:2px solid #44c299 !important;
+    }
+    .el-slider__bar{
+        background-color:#44c299 !important;
+    }
+    .el-upload-dragger .el-upload__text em{
+        color:#44c299 !important;
+    }
+    .el-upload-dragger:hover{
+        border:1px solid #44c299 !important;
+    }
+    .el-upload-dragger{
+        border:1px dashed #44c299 !important;
+    }
+    .el-icon-upload{
+        color:#44c299 !important;
+    }
+    .el-icon-upload:hover{
+        color:#45deb5 !important;
+    }
+    .el-card{
+        border:1px solid #44c299 !important;
+    }
     .el-form-item__label{
         position: relative;
         right: 20px;
+    }
+    .el-button.el-button--primary.el-button--medium{
+        background-color: #44c299;
+        border: 1px solid #44c299;
+    }
+    .el-button.el-button--primary.el-button--medium:hover{
+        background-color: #45deb5;
+        border: 1px solid #45deb5;
+    }
+    .el-footer {
+        z-index: 0;
+        bottom: 0;
+        width: 100%;
+        height: 5vh !important;
+        position: fixed;
     }
 </style>
